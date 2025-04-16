@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="css/Register_Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastre-se</h1>
+
+        <div class="form">    
+            <form>
+                <label for="i-text">Nome completo:</label><br/>
+                <input type="text" id="i-text"><br/>
+
+                <label for="i-email">Email:</label><br/>
+                <input type="email" id="i-email"><br/>
+
+                <label for="i-password">Senha:</label><br/>
+                <input type="password" id="i-password"><br/>
+
+                <label for="i-password">Confirme sua senha:</label><br/>
+                <input type="password" id="i-password"><br/>
+                
+                <label for="i-genero">Gênero:</label><br/>
+                <input type="radio" name="genero" value="masculino" checked>
+                Masculino
+                <input type="radio" name="genero" value="feminino"> Feminino
+                <input type="radio" name="genero" value="outro"> Outros <br/>
+
+                <input type="button" id="i-button" onclick="alert('Verifique o seu e-mail para seguir com o cadastro')" value="Seguinte"><br/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
