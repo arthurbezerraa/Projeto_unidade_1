@@ -337,6 +337,86 @@ ul{
     
 }
 
+footer{
+    display: flex;
+}
+
+footer h1{
+    color: black;
+    margin: 0;
+}
+
+footer h3{
+    margin: 0;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+#form-control{
+    padding: 2rem;
+    background-color: #022548;
+}
+
+footer form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input{
+    height: 3rem;
+    margin: 0.3rem;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border-bottom: 1px solid gray;
+}
+
+textarea{
+    margin: 0.3rem;
+    border: none;
+    resize: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border-bottom: 1px solid gray;
+}
+
+#icon-control{
+    background-color: #F4E3C1;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.icons a{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 0.5rem;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.footer-icon{
+    width: 2rem;
+}
+
+.footer-icon svg{
+    border-radius: 100%;
+}
+
+#footer-logo{
+    margin-bottom: 5rem; 
+}
+
 
 @media(min-width: 48rem){
     header{
@@ -463,6 +543,21 @@ ul{
     #about-text {
         font-size: 1.3rem;
         margin: auto;
+    }
+
+    footer{
+        display: block;
+    }
+
+    #icon-control{
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    #footer-logo{
+        margin: 0;
+        margin-left: 5rem;
     }
 }
 
