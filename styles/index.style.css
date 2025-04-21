@@ -149,7 +149,7 @@ ul{
 
 #explanation{
     /* background: linear-gradient(180deg, rgb(255, 240, 208), rgb(232, 248, 255)); */
-    background-color: rgb(255, 240, 208);
+    background-color: #F4E3C1;
     color: black;
     height: 100%;
 }
@@ -182,17 +182,6 @@ ul{
     flex-wrap: wrap;
 }
 
-.line-dots{
-    background-color: black;
-    height: 1rem;
-    width: 1rem;
-    border-radius: 40px;
-    display: flex;
-    position: absolute;
-    right: 50%;
-    top: 140.5%;
-}
-
 .line-dots2{
     display: none;
 }
@@ -218,10 +207,95 @@ ul{
     margin: auto;
 }
 
-svg{
+.hero-circles svg{
     scale: 0.5;
 }
 
+#opinions{
+    background-color: #022548;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#opinion-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#stars{
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.icon{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0.12rem;
+    color: #ffd600;
+    justify-content: center;
+}
+
+#opinion-header h2{
+    font-size: 2.25rem;
+    margin-top: 1rem;
+    padding: 2rem;
+    padding-top: 0;
+}
+
+#opinion-content {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 1rem;
+    padding-top: 0;
+  }
+  
+  #opinion-hero,
+  #second-opinion,
+  #third-opinion {
+    display: none;
+    animation: fade 0.5s ease-in-out;
+  }
+  
+  .job {
+    opacity: 0.68;
+  }
+  
+  #slider-dot-control {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  #slider-dot-control label {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  #op1:checked ~ #slider-dot-control label[for="op1"],
+  #op2:checked ~ #slider-dot-control label[for="op2"],
+  #op3:checked ~ #slider-dot-control label[for="op3"] {
+    background: #fff;
+  }
+  
+  #op1:checked ~ #opinion-content #opinion-hero {
+    display: block;
+  }
+  #op2:checked ~ #opinion-content #second-opinion {
+    display: block;
+  }
+  #op3:checked ~ #opinion-content #third-opinion {
+    display: block;
+  }
+  
 #about-us{
     height: 15rem;
     background-color: rgb(252, 255, 255);
@@ -330,7 +404,7 @@ svg{
     #explanation{
         /* background: linear-gradient(180deg, rgb(255, 240, 208), rgb(232, 248, 255)); */
         color: black;
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .control-div{
@@ -352,6 +426,30 @@ svg{
         margin: 0;
     }
 
+    #opinions{
+        padding: 5rem;
+    }
+
+    #opinion-header h2{
+        font-size: 3rem;
+        margin-top: 1rem;
+        padding: 2rem;
+        padding-top: 0;
+    }
+
+    #opinion-content{
+        font-size: 1.75rem;
+        padding-top: 2rem;
+    }
+
+    #opinion-content p{
+        font-size: 1rem;
+    }
+
+    .author-description{
+        margin-top: 3rem;
+    }
+    
     #blue-section{
         width: 15%;
     }
@@ -413,3 +511,9 @@ svg{
         opacity: 1;
     }
 }
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
