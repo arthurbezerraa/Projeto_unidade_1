@@ -4,57 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="styles/home_page.style.css">
+    <link rel="stylesheet" href="styles/hosting.style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap">
 </head>
 <body>
 
-    <section id="image-control">
-        <div id="menu-superior">
-            <a href="./index.html" class="link">Home</a>
-            <a href="./login.html" class="link">Usuário</a>
-            <a href="./hosting.html" class="link">Hospedagem</a>
-            <a href="" class="link">Checklist</a>
+<section id="image-control">
+    <div id="menu-superior">
+        <a href="./index.html" class="link">Home</a>
+        <a href="./login.html" class="link">Usuário</a>
+        <a href="" class="link">Hospedagem</a>
+        <a href="./home_page.html" class="link">Checklist</a>
+    </div>
+
+    <div id="title">
+        <h1>Hospede a melhor viagem para você</h1>
+    </div>
+    
+    <div class="container">
+        <h1>Preencha as informações de acordo com seu interesse de viagem</h1>
+
+        <div class="form">    
+            <form>
+                <label for="i-date">Destino ida</label>
+                <select name="destination">
+                    <option value="natal">Natal</option>
+                    <option value="recife">Recife</option>
+                    <option value="brasilia">Brasilia</option>
+                    <option value="serra-negra">Serra Negra do Norte</option>
+                </select>
+
+                <label for="i-date">Data ida</label>
+                <input type="date" name="bday" id="i-date" max="2019-05-20">
+
+                <label for="i-date">Destino volta</label>
+                <select name="destination">
+                    <option value="natal">Natal</option>
+                    <option value="recife">Recife</option>
+                    <option value="brasilia">Brasilia</option>
+                    <option value="serra-negra">Serra Negra do Norte</option>
+                </select>
+
+                <label for="i-date">Data volta</label>
+                <input type="date" name="bday" id="i-date" max="2019-05-20"><br/><br/>
+
+                <input type="button" id="i-button" onclick="alert('Faça login ou registre-se primeiro para ver as ofertas')" value="Procurar"><br/>
+            </form>
         </div>
-
-        <h1>Checklist</h1>
-
-        <div id="checklist">
-            <div class="container">
-                <div class="row">
-                    <button class="btn-check"></button><p>Passagens</p>
-                </div>
-                <div class="row">
-                    <button class="btn-check"></button><p>Reservar hotel</p>
-                </div>
-                <div class="row">
-                    <button class="btn-check"></button><p>Definir roteiro</p>
-                </div>
-                <div class="row">
-                    <button class="btn-check"></button><p>Documentos</p>
-                </div>
-                <div class="row">
-                    <button class="btn-check"></button><p>Remédios</p>
-                </div>
-                <div class="row">
-                    <button class="btn-check"></button><p>Transporte</p>
-                </div>
-                <div class="row">
-                    <button class="btn-check"></button><p>Mala de mão</p>
-                </div>
-                <div class="row">
-                    <button class="btn-check"></button><p>Mala principal</p>
-                </div>
-                <div class="row">
-                    <button class="btn-check"></button><p>Roupa adequada</p>
-                </div>
-                <div class="row">
-                    <button class="btn-check"></button><p>Muita diversão!</p>
-                </div>
-            </div>
-        </div>
-
-
+    </div>
 </section>
 
     

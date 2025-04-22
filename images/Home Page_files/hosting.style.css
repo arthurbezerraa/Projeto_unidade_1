@@ -1,0 +1,189 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F4E3C1;
+  color: black;
+}
+
+#image-control {
+  background-image: url('../images/organizar-viagem.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+#menu-superior{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section a {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+#title{
+    margin: 7vh 0 7vh 0;
+}
+
+#title h1 {
+  font-family: 'Bitter', serif;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slide-in 1s ease;
+
+    margin: auto;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.container h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #000;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #000;
+}
+
+select, input[type="date"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: transparent;
+  color: #000;
+  outline: none;
+}
+
+input[type="button"] {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: #2B2B2B;
+  color: white;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #3a3a3a;
+}
+
+#icon-control{
+  background-color: #F4E3C1;
+  width: 100%;
+
+  display: flex;
+  padding: 1rem;
+
+  justify-content: space-around;
+  align-items: be;
+}
+
+.icons a{
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 0.5rem;
+  color: black;
+  font-family: 'Montserrat';
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.footer-icon{
+  width: 2rem;
+}
+
+.footer-icon svg{
+  border-radius: 100%;
+}
+
+#footer-logo{
+  margin-bottom: 5rem; 
+}
+
+footer h1 {
+
+  color: black;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media(min-width: 48rem){
+  footer{
+      display: block;
+  }
+
+  #icon-control{
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
+  }
+
+  #footer-logo{
+      margin: 0;
+      margin-left: 5rem;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
