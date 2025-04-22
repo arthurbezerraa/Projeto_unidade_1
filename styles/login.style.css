@@ -168,18 +168,9 @@ footer
   margin-bottom: 5rem; 
 }
 
-/* footer h1 {
-  color: black;
-  margin: 0;
-}
-
-footer a {
-  font-family: "Quicksand", sans-serif;
-
-  font-weight: bold;
-  color: inherit;
+footer a:hover {
   text-decoration: none;
-} */
+}
 
 footer h1 {
   color: black;
