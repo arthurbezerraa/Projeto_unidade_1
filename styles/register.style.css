@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  margin-top: 12vh;
+  margin-top: 10vh;
   justify-self: center;
   align-self: center;
   
@@ -58,7 +58,6 @@ input[type="password"] {
 
 input[type="radio"] {
   margin: 2vh 4vh 2vh 2vh;
-
 }
 
 input[type="button"] {
@@ -89,22 +88,72 @@ input[type="button"]:hover {
   }
 }
 
-#waterMark{
-  justify-self: left;
-
-  display: flex;
-  
+footer
+{
   margin-top: 10vh;
-  padding-left: 10vw;
-
 }
 
-#waterMark a{
+#icon-control{
+  background-color: #F4E3C1;
+  width: 100%;
+
+  display: flex;
+  padding: 1rem;
+
+  justify-content: space-around;
+  align-items: be;
+}
+
+.icons a{
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 0.5rem;
+  color: black;
+  font-family: 'Montserrat';
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.footer-icon{
+  width: 2rem;
+}
+
+.footer-icon svg{
+  border-radius: 100%;
+}
+
+#footer-logo{
+  margin-bottom: 5rem; 
+}
+
+footer h1 {
+  color: black;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+footer a {
   color: inherit;
-  /* color: white; */
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  padding: 1rem;  
-  font-size: 2.5rem;
+}
+
+@media(min-width: 48rem){
+  footer{
+      display: block;
+  }
+
+  #icon-control{
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
+  }
+
+  #footer-logo{
+      margin: 0;
+      margin-left: 5rem;
+  }
 }
