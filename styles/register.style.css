@@ -1,29 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #022548;
+  color: #000;
+  display: flex;
+
+  flex-direction: column;
+  height: 100vh;
+}
+
 .container {
-  margin: auto;
-  width: 25%;
-  text-align: center;
-  background-color: lightgrey;
-  padding: 20px;
-  }
-  label{
-  margin-left: 3px;
-  }
-  input{
-  margin: 5px;
-  }
-  .form{
-  text-align: left;
+  margin-top: 12vh;
+  justify-self: center;
+  align-self: center;
+  
   background-color: white;
-  }
-  input[type=text]{
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 450px;
   width: 90%;
+  text-align: center;
+  animation: slide-in 1s ease;
+}
+
+h1 {
+  font-family: 'Bitter', serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  text-align: left;
+}
+
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: block;
+  margin: 1rem 0 0.3rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: transparent;
+  color: #000;
+  font-size: 1rem;
+  outline: none;
+}
+
+input[type="radio"] {
+  margin: 2vh 4vh 2vh 2vh;
+
+}
+
+input[type="button"] {
+  margin-top: 1.5rem;
+  background-color: #2B2B2B;
+  color: white;
+  font-weight: bold;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #3a3a3a;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
   }
-  input[type=email]{
-  width: 90%;
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  input[type=password]{
-  width: 90%;
-  }
-  textarea{
-  margin-left: 5px;
-  }
+}
+
+#waterMark{
+  justify-self: left;
+
+  display: flex;
+  
+  margin-top: 10vh;
+  padding-left: 10vw;
+
+}
+
+#waterMark a{
+  color: inherit;
+  /* color: white; */
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  padding: 1rem;  
+  font-size: 2.5rem;
+}

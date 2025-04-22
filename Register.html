@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Cadastro</title>
-    <link rel="stylesheet" href="css/Register_Style.css">
+    <link rel="stylesheet" href="styles/register.style.css">
 </head>
 <body>
     <div class="container">
@@ -24,15 +24,21 @@
                 <label for="i-password">Confirme sua senha:</label><br/>
                 <input type="password" id="i-password"><br/>
                 
-                <label for="i-genero">Gênero:</label><br/>
-                <input type="radio" name="genero" value="masculino" checked>
-                Masculino
-                <input type="radio" name="genero" value="feminino"> Feminino
-                <input type="radio" name="genero" value="outro"> Outros <br/>
+                <div id="multiple-choice">
+                    <label for="i-genero">Gênero:</label><br/>
+                    <input type="radio" name="genero" value="masculino" checked>
+                    Masculino
+                    <input type="radio" name="genero" value="feminino"> Feminino
+                    <input type="radio" name="genero" value="outro"> Outros <br/>
+                </div>
 
                 <input type="button" id="i-button" onclick="alert('Verifique o seu e-mail para seguir com o cadastro')" value="Seguinte"><br/>
             </form>
         </div>
     </div>
+
+    <!-- <div id="waterMark">
+        <h1><a href="index.html">Travel</a></h1>
+    </div> -->
 </body>
 </html>
