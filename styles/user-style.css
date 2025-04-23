@@ -1,0 +1,331 @@
+body{
+    color: white;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#main-header nav{
+    display: none;
+}
+
+header{
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#main-header a{
+    color: inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding: 1rem;  
+    font-size: 2rem;
+}
+
+#login a{
+    background-color: rgb(43, 43, 43);
+    width: 4.2rem;
+    padding: 1.3rem;
+    border-radius: 6px;
+    margin-left: 1rem;
+    height: 1rem;
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    animation-name: slide-in;
+    animation-duration: 2s;
+}
+
+h2{
+    font-family: 'Bitter',sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0;
+}
+
+p{
+
+}
+
+#menu-button{
+    display: flex;
+    width: 3rem;
+    height: 2.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#menu-button span{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+#alter-button{
+    display: flex;
+    width: 1rem;
+    height: 2.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+}
+
+#alter-button span{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+#side-drawer header{
+    width: 100%;
+    justify-content: end;
+    padding: 3rem;
+    box-sizing: border-box;
+    padding-bottom: 0;
+    background-color: white;
+}
+
+#side-drawer{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 6px 6px;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#side-drawer:target{
+    display: block;
+    transform: translateY(0);
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#side-drawer ul{
+    list-style: none;
+    text-align: center;
+    padding: 2rem;
+    height: 100%;
+    font-size: 1.2rem;
+    margin: 0;
+    padding-top: 0;
+}
+
+nav ul{
+    color: black;
+}
+
+nav ul li{
+    margin: 2rem;
+}
+
+ul{
+    list-style: none;
+}
+
+#background-image{
+    background: url('/images/sagar-rana-jfRQ-6JKr38-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10rem;
+}
+
+#hero{
+    padding: 0;
+}
+
+#user-header{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(233, 241, 255);
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
+}
+
+#user-photo{
+    width: 10rem;
+    height: 9rem;
+    border-radius: 100%;
+    border: 5px solid white;
+    box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 72px;
+}
+
+#user-photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+#user-info{
+    color: black;
+}
+
+#user-info h2{
+    font-size: 1.6rem;
+}
+
+#description{
+    background-color: antiquewhite;
+    padding: 5rem;
+}
+
+#agenda{
+    color: black;
+    background-color: rgb(218, 218, 218);
+    border-radius: 6px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+caption{
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+table{
+    padding: 10 rem;
+}
+
+table,th,tr,td{
+   
+    text-align: center;
+}
+
+td:hover{
+    background-color: rgb(60, 75, 160);
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+ 
+@media(min-width: 48rem){
+    header{
+        padding: 2%;
+    }
+
+    #main-header h1{
+        margin-left: 10rem;
+    }
+
+    #main-header h1 a{
+        font-size: 2.5rem;
+    }
+
+    #main-header nav{
+        display: block;
+    }
+
+    #main-header nav ul{
+        display: flex;
+        list-style: none;
+        color: white;
+        flex-wrap: wrap;
+    }
+
+    #main-header nav ul a{
+        font-size: 1.2rem;
+    }
+
+    #main-header nav ul a:hover{
+        text-decoration: underline;
+    }
+
+    #menu-button{
+        display: none;
+    }
+
+    #user-header{
+        gap: 8rem;
+        align-items: flex-start;
+        padding-left: 15rem;
+        height: 15rem;
+    }
+
+    #user-header h2{
+        font-size: 2rem;
+    }
+
+    #background-image{
+        height: 22rem;
+    }
+
+    #user-photo{
+        width: 20rem;
+        height: 20rem;
+        bottom: 144px
+    }
+
+    #user-info{
+        margin-top: 2rem;
+    }
+
+    table{
+        margin: auto;
+        width: 40rem;
+        height: 40rem;
+    }
+
+    #agenda{
+    color: black;
+    background-color: rgb(218, 218, 218);
+    border-radius: 6px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+}
+}
+
+@media(min-width:48rem) and (max-width:70.3rem){
+
+    #main-header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #main-header h1{
+        margin-left: 0;
+    }
+
+    #main-header nav ul{
+        padding: 0;
+    }
+
+    #main-header nav ul li{
+        margin: 0;
+    }
+
+    #main-header nav ul li a{
+        font-size: 0.9rem;
+    }
+
+    #hero{
+        padding-bottom: 0;
+        padding-left: 1rem;
+    }
+
+    #hero h2{
+        font-size: 6rem;
+    }
+}
