@@ -218,6 +218,57 @@ td:hover{
     cursor: pointer;
 }
 
+footer{
+    display: flex;
+}
+
+footer h1{
+    color: black;
+    margin: 0;
+}
+
+footer h3{
+    margin: 0;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+#icon-control{
+    background-color: #F4E3C1;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.icons a{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 0.5rem;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.footer-icon{
+    width: 2rem;
+}
+
+.footer-icon svg{
+    border-radius: 100%;
+}
+
+#footer-logo{
+    margin-bottom: 5rem; 
+}
+
+
+
  
 @media(min-width: 48rem){
     header{
@@ -292,6 +343,20 @@ td:hover{
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
     }
 
+    footer{
+        display: block;
+    }
+
+    #icon-control{
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    #footer-logo{
+        margin: 0;
+        margin-left: 5rem;
+    }
 }
 
 @media(min-width:48rem) and (max-width:70.3rem){
