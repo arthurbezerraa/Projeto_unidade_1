@@ -197,6 +197,10 @@ ul{
     background-color: rgb(233, 241, 255);
     border-radius: 6px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
 }
 
 caption{
@@ -205,19 +209,13 @@ caption{
     font-size: 1.7rem;
 }
 
-table{
-    padding: 10 rem;
-}
-
 table,th,tr,td{
-   
     text-align: center;
 }
 
 td:hover{
-    background-color: rgb(60, 75, 160);
+    background-color: rgb(164, 178, 255);
     cursor: pointer;
-    border-radius: 100%;
 }
 
  
@@ -325,7 +323,4 @@ td:hover{
         padding-left: 1rem;
     }
 
-    #hero h2{
-        font-size: 6rem;
-    }
 }
